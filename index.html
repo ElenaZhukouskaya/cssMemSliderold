@@ -14,41 +14,51 @@
     <title>CSS Mem Slider</title>
   </head>
   <body>
-    <div class="container">
-      <input checked type="radio" name="slider" id="swich1" />
-      <input type="radio" name="slider" id="swich2" />
-      <input type="radio" name="slider" id="swich3" />
-      <input type="radio" name="slider" id="swich4" />
+    <main>
+      <div class="container">
+        <input checked type="radio" name="slider" id="swich1" />
+        <input type="radio" name="slider" id="swich2" />
+        <input type="radio" name="slider" id="swich3" />
+        <input type="radio" name="slider" id="swich4" />
 
-      <div class="slides">
-        <div class="slide">
-          <img src="./assets/1.jpg" alt="nature" />
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="./assets/1.jpg" alt="nature" />
+            </div>
+            <div class="slide">
+              <img src="./assets/2.jpg" alt="nature" />
+            </div>
+            <div class="slide">
+              <img src="./assets/3.jpg" alt="nature" />
+            </div>
+            <div class="slide">
+              <img src="./assets/4.jpg" alt="nature" />
+            </div>
+          </div>
         </div>
-        <div class="slide">
-          <img src="./assets/2.jpg" alt="nature" />
-        </div>
-        <div class="slide">
-          <img src="./assets/3.jpg" alt="nature" />
-        </div>
-        <div class="slide">
-          <img src="./assets/4.jpg" alt="nature" />
+
+        <div class="container__bottom">
+          <div class="slides-description">
+            <div class="container__slides-description">
+              <p class="slide-description">Пересматривая старые работы</p>
+              <p class="slide-description">
+                И что здесь сложного? Я не понимаю
+              </p>
+              <p class="slide-description">
+                Когда первый раз видишь вопросы тестов RS School
+              </p>
+              <p class="slide-description">День релиза. Что-то пошло не так.</p>
+            </div>
+          </div>
+          <div class="controls">
+            <label for="swich1"><span class="control-swich"></span></label>
+            <label for="swich2"><span class="control-swich"></span></label>
+            <label for="swich3"><span class="control-swich"></span></label>
+            <label for="swich4"><span class="control-swich"></span></label>
+          </div>
         </div>
       </div>
-
-      <div class="container__bottom">
-        <div class="description">
-          <p class="text">Пересматривая старые работы</p>
-          <p class="text">И что здесь сложного? Я не понимаю</p>
-          <p class="text">Когда первый раз видишь вопросы тестов RS School</p>
-          <p class="text">День релиза. Что-то пошло не так.</p>
-        </div>
-        <div class="controls">
-          <label for="swich1"></label>
-          <label for="swich2"></label>
-          <label for="swich3"></label>
-          <label for="swich4"></label>
-        </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
