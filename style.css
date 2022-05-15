@@ -37,10 +37,6 @@ body {
 .container {
   margin: 0 auto;
   padding: 1.25em;
-  width: 60vw;
-  min-width: 20em;
-  /* max-height: 90vh; */
-  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,29 +55,24 @@ body {
 .slider {
   width: 100%;
   max-width: 47.25em;
-  /* max-width: 50em; */
   height: auto;
-  /* height: 100%; */
   overflow: hidden;
 }
 
 .slides {
   width: 400%;
-  /* height: 100%; */
   display: flex;
   transition: 0.7s all ease-in-out;
 }
 
 .slide {
   width: 25%;
-  /* width: 50vw; */
   transition: 0.7s all ease-in-out;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  /* height: auto; */
   height: 24.5em;
   object-fit: fill;
 }
@@ -89,7 +80,6 @@ body {
 .container__bottom {
   width: 100%;
   max-width: 47.25em;
-  /* height: 3.2em; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,21 +90,18 @@ body {
   padding: 0.625em 0;
   height: 100%;
   flex: 1 1 100%;
-  /* width: 65%; */
   overflow: hidden;
 }
 
 .container__slides-description {
   width: 400%;
   display: flex;
-  /* height: 100%; */
-  /* transition: 1s all ease-in-out; */
-  /* vertical-align: middle; */
 }
 
 .slide-description {
   padding: 0.625em;
   width: 25%;
+  word-break: break-word;
 }
 
 .controls {
@@ -122,7 +109,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: end;
-  /* width: 35%; */
   gap: 0.625em;
 }
 
@@ -177,4 +163,82 @@ body {
 #swich4:checked ~ .container__bottom label:nth-child(4) .control-swich {
   background-color: var(--color-background);
   border: 0.125em solid var(--color-dark);
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1115px) {
+  .slide img {
+    height: 24em;
+  }
+}
+
+@media (max-width: 1105px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1079.9px) {
+  .container {
+    width: 70vw;
+  }
+
+  .slide img {
+    height: 20em;
+  }
+}
+
+@media (max-width: 958.9px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 629.9px) {
+  html {
+    line-height: 1;
+  }
+
+  .container {
+    width: 95vw;
+  }
+
+  .slide img {
+    height: 100%;
+  }
+
+  .container__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .slide-description {
+    padding: 0 0 0.625em 0;
+  }
+
+  .controls {
+    padding: 0;
+  }
+}
+
+@media (max-width: 589.9px) {
+  :root {
+    --font-primary-text: 1em;
+  }
+
+  .controls {
+    padding: 1em;
+  }
 }
